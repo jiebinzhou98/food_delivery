@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    cursor: pointer;
 }
 .navbar button{
     background: transparent;
@@ -43,6 +44,7 @@
 }
 .navp-cart{
     position: relative;
+    cursor: pointer;
 }
 .dot{
     position: absolute;
