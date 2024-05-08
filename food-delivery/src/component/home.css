@@ -1,0 +1,26 @@
+.dish-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.dish-category img{
+    width: 150px;
+    margin: 0 10px;
+}
+.category-item span{
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.featured-dishes{
+    text-align: center;
+}
+
+.featured-dishes h1{
+    font-size: 24px;
+    color: #333;
+}

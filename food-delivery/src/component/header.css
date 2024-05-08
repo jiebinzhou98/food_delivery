@@ -15,6 +15,13 @@
     gap: 40px;
     font-size: 18px;
 }
+.nav-menu li{
+    cursor: pointer;
+    padding: 10px;
+}
+.nav-menu li.active{
+    border-bottom: 2px solid #007bff;
+}
 
 .navbar-right{
     display: flex;
@@ -33,4 +40,16 @@
 }
 .navbar button:hover{
     background-color: gray;
+}
+.navp-cart{
+    position: relative;
+}
+.dot{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
 }
