@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
-// import App from "../App";
-//import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import "./footer.css";
 import facebook_icon from "../images/facebook_icon.png";
 import twitter_icon from "../images/twitter_icon.png";

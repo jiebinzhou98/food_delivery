@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./home.css";
 import Header from "./header";
-import Footer from "./footer"
+import Footer from "./footer";
 import Menu1 from "../images/Assets/menu_1.png"
 import Menu2 from "../images/Assets/menu_2.png"
 import Menu3 from "../images/Assets/menu_3.png"
@@ -39,23 +39,23 @@ const Home = () => {
       <div className="home">
         <div className="dish-category">
             <div className="category-item">
-                <img src={Menu1}/>
+                <img src={Menu1} />
                 <span>Noodle</span>
             </div>
             <div className="category-item">
-                <img src={Menu2}/>
+                <img src={Menu2} />
                 <span>Spring Roll</span>
             </div>
             <div className="category-item">
-                <img src={Menu3}/>
+                <img src={Menu3} />
                 <span>PanCake</span>
             </div>
             <div className="category-item">
-                <img src={Menu4}/>
+                <img src={Menu4} />
                 <span>Sandwitch</span>
             </div>
             <div className="category-item">
-                <img src={Menu5}/>
+                <img src={Menu5} />
                 <span>Dessert</span>
             </div>
         </div>
