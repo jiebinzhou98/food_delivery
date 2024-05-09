@@ -1,6 +1,6 @@
 import React from 'react'
 import './SigninPopup.css'
-import 'bootstrap/dist/css/bootstrap.css'
+//import 'bootstrap/dist/css/bootstrap.css'
 
 function SigninPopup(props){
     return ( props.trigger)?(
