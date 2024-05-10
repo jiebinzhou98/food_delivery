@@ -1,6 +1,47 @@
+/* footer.css */
 
-
-.nav .nav-link{
-    padding-left: 0;
-    padding-right: 0;
-}
+.container-fluid {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex: 1;
+  }
+  
+  .nav-link {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  

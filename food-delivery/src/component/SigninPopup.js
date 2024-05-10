@@ -1,39 +1,39 @@
-import React from 'react'
-import './SigninPopup.css'
-//import 'bootstrap/dist/css/bootstrap.css'
+// SigninPopup.js
+import React, { useState } from 'react';
+import './SigninPopup.css';
 
-function SigninPopup(props){
-    return ( props.trigger)?(
+function SigninPopup(props) {
+    const [action, setAction] = useState("Sign in");
+
+    const handleToggle = () => {
+        setAction(action === "Sign in" ? "Create an Account" : "Sign in");
+    };
+
+    return (
         <div className='Popup'>
             <div className='Popup-inner'>
-                <form >
-                    <h2 className='d-flex justify-content-center'>Sign in</h2>
-                    <label for="User's email and phone number">Enter Email or Phone Number</label>
-                    <br /><input type="text" /> 
+                <form>
+                    <h2 className='d-flex justify-content-center'>{action}</h2>
+                    <label htmlFor="user-email-phone">Enter Email or Phone Number</label>
+                    <br /><input type="text" id="user-email-phone" />
                     <br />
-                    <label for="password"> Password </label>
-                    <br /><input type="text" />
+                    <label htmlFor="password">Password</label>
+                    <br /><input type="password" id="password" />
                     <br />
                     <br />
-                
-                    <input type='button' className='signin-btn' onClick={()=>{props.setTrigger(false)}} value={'Sign in'}/> 
-                    {/* <input type="button" className='close-btn' onClick={()=>{props.setTrigger(false)}} value={"Close"}/>  */}
-                    <button className='close-btn' onClick={()=>{props.setTrigger(false)}}>Close</button>
+                    <input type='button' className='signin-btn' onClick={() => props.setTrigger(false)} value={action} />
+                    <button className='close-btn' onClick={() => props.setTrigger(false)}>Close</button>
                 </form>
-                
-                
-                {/* {props.children} */}
-            
                 <br />
                 <div>
                     <div>New to our Store?</div>
-                    <a href="">Create an Account</a>
+                    <span onClick={handleToggle} style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
+                        {action === 'Sign in' ? 'Create an Account' : 'Back to Sign in'}
+                    </span>
                 </div>
             </div>
         </div>
-    ):"";
-        
-    
+    );
 }
 
-export default SigninPopup
+export default SigninPopup;

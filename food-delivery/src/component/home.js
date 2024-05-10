@@ -1,7 +1,5 @@
 import React, {Component} from "react";
 import "./home.css";
-import Header from "./header";
-import Footer from "./footer";
 import Menu1 from "../images/Assets/menu_1.png"
 import Menu2 from "../images/Assets/menu_2.png"
 import Menu3 from "../images/Assets/menu_3.png"

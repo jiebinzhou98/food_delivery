@@ -1,4 +1,5 @@
-import React, {Component, Fragment, useState, useRef} from "react";
+// Header.js
+import React, { useState } from "react";
 import './header.css'
 import Logo from '../images/logo.png'
 import cartIcon from '../images/cart.png'
@@ -7,8 +8,7 @@ import SigninPopup from "./SigninPopup";
 
 const Header = () =>{
     const [activeMenuItem, setActiveMenuItem] = useState(null);
-    const footerRef = useRef(null);
-    const [buttonPopup,setButtonPopup]=useState(false);
+    const [buttonPopup, setButtonPopup] = useState(false);
 
     const handleMenuClick = (menuItem) =>{
         setActiveMenuItem(menuItem)
@@ -21,7 +21,7 @@ const Header = () =>{
     }
     
     return (
-        <Fragment>
+        <>
             <div className="navbar">
                 <img src={Logo} className="nav-logo"/>
                 <ul className="nav-menu">
@@ -36,17 +36,11 @@ const Header = () =>{
                         <div className="dot"></div>
                     </div>
                     <button className="nav-user" onClick={()=>setButtonPopup(true)}>Sign In</button>
-                    
-                    
                 </div>
-                
-                <div ref= {footerRef}></div>
             </div>
-            <SigninPopup trigger={buttonPopup} setTrigger={setButtonPopup} ></SigninPopup>
-            
-        </Fragment>
-        
+            {buttonPopup && <SigninPopup trigger={buttonPopup} setTrigger={setButtonPopup} />}
+        </>
     )
 }
 
-export default Header
+export default Header;
